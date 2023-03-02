@@ -40,11 +40,15 @@ function changePlayerState(){
       let key = Object.keys(player1)[item];
       player1[key].innerHTML = inputs[key].value;
     }
+    const image1 = document.getElementById('image1');
+    image1.src = `./assets/images/${inputs.village.value}.gif`;
   }else{
     for(let item in Object.keys(player2)){
       let key = Object.keys(player2)[item];
       player2[key].innerHTML = inputs[key].value;
     }
+    const image2 = document.getElementById('image2');
+    image2.src = `./assets/images/${inputs.village.value}.gif`;
   }
 
 }
