@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Character</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/src/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,13 +12,13 @@
       <h1 class="text-center mt-4">Naruto Game</h1>
       <form>
         <div class="row pb-2 pt-3">
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="form-group">
               <label for="charName">Character Name</label>
               <input type="text" class="form-control" id="charName">
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="form-group">
               <label for="village">Village</label>
               <select id="villageSelect" class="form-select" aria-label="Default select example">
@@ -28,7 +29,7 @@
               </select>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="form-group">
               <label for="player">Player 1 or 2</label>
               <select id="playerSelect" class="form-select" aria-label="Default select example">
@@ -39,19 +40,19 @@
           </div>
         </div>
         <div class="row pb-3">
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="form-group">
               <label for="health">Health</label>
               <input type="number" class="form-control" id="health">
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="form-group">
               <label for="shield">Shield</label>
               <input type="number" class="form-control" id="shield">
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="form-group">
               <label for="mana">Mana</label>
               <input type="number" class="form-control" id="mana">
@@ -61,22 +62,22 @@
         <a class="btn btn-success" id="buttonCreateCharacter">Add</a>
       </form>
       <section>
-        <div class="d-flex justify-content-between mt-5 pt-4 ">
+        <div class="d-flex flex-wrap justify-content-between mt-md-5 pt-4 ">
           <div id="player1" class="border border-5 rounded-3 py-2 px-3">
-            <h4 class="text-center" id="name1">Char Name</h4>
+            <h5 class="text-center" id="name1">Char Name</h5>
             <div class="row">
-              <div class="col-4 text-center"><i class="fa fa-heart text-danger"></i> <span id="health1">10</span></div>
-              <div class="col-4 text-center"><i class="fa fa-shield text-muted"></i> <span id="shield1">10</span></div>
-              <div class="col-4 text-center"><i class="fa fa fa-tint text-primary"></i> <span id="mana1">10</span></div>
+              <div class="col-4 text-center"><i class="d-block fa fa-heart text-danger"></i> <span id="health1">10</span></div>
+              <div class="col-4 text-center"><i class="d-block fa fa-shield text-muted"></i> <span id="shield1">10</span></div>
+              <div class="col-4 text-center"><i class="fa d-block fa fa-tint text-primary"></i> <span id="mana1">10</span></div>
             </div>
             <img id="image1" class="image-player" src="" alt="">
           </div>
           <div id="player2" class="border border-5 rounded-3 py-2 px-3">
-            <h4 class="text-center" id="name2">Char Name</h4>
+            <h5 class="text-center" id="name2">Char Name</h5>
             <div class="row">
-              <div class="col-4 text-center"><i class="fa fa-heart text-danger"></i> <span id="health2">10</span></div>
-              <div class="col-4 text-center"><i class="fa fa-shield text-muted"></i> <span id="shield2">10</span></div>
-              <div class="col-4 text-center"><i class="fa fa fa-tint text-primary"></i> <span id="mana2">10</span></div>
+              <div class="col-4 text-center"><i class="d-block fa fa-heart text-danger"></i> <span id="health2">10</span></div>
+              <div class="col-4 text-center"><i class="d-block fa fa-shield text-muted"></i> <span id="shield2">10</span></div>
+              <div class="col-4 text-center"><i class="fa d-block fa fa-tint text-primary"></i> <span id="mana2">10</span></div>
             </div>
             <img id="image2" class="image-player" src="" alt="">
           </div>
@@ -89,4 +90,4 @@
     <script type="module" src="src/js/Character.js"></script>
     <script type="module" src="src/js/Interaction.js"></script>
   </body>
-</html>
+</html> 
