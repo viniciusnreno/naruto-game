@@ -42,19 +42,19 @@
         <div class="row pb-3">
           <div class="col-md-4">
             <div class="form-group">
-              <label for="health">Health</label>
+              <label for="health"><i class="fa fa-heart text-danger"></i> Health</label>
               <input type="number" class="form-control" id="health">
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="shield">Shield</label>
+              <label for="shield"><i class=" fa fa-shield text-muted"></i> Shield</label>
               <input type="number" class="form-control" id="shield">
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="mana">Mana</label>
+              <label for="mana"><i class="fa  fa fa-tint text-primary"></i> Mana</label>
               <input type="number" class="form-control" id="mana">
             </div>
           </div>
@@ -62,29 +62,35 @@
         <a class="btn btn-success" id="buttonCreateCharacter">Add</a>
       </form>
       <section>
-        <div class="box-characters justify-content-between mt-md-5 pt-4 ">
+        <div class="box-characters justify-content-between pt-4 ">
           <div id="player1" class="border border-5 rounded-3 py-2 px-3">
             <h5 class="text-center" id="name1">Char Name</h5>
             <div class="row"> 
-              <div class="col-4 text-center"><i class="d-block fa fa-heart text-danger"></i> <span id="health1">10</span></div>
-              <div class="col-4 text-center"><i class="d-block fa fa-shield text-muted"></i> <span id="shield1">10</span></div>
-              <div class="col-4 text-center"><i class="fa d-block fa fa-tint text-primary"></i> <span id="mana1">10</span></div>
+              <div class="col-4 text-center"><i class="d-block fa fa-heart text-danger"></i> <span id="health1"></span></div>
+              <div class="col-4 text-center"><i class="d-block fa fa-shield text-muted"></i> <span id="shield1"></span></div>
+              <div class="col-4 text-center"><i class="fa d-block fa fa-tint text-primary"></i> <span id="mana1"></span></div>
             </div>
-            <div class="d-flex justify-content-center
-             align-center">
-              <img id="image1" class="image-player" src="" alt="">
+            <div class="box-image-character d-flex justify-content-center align-center">
+              <img id="image1" src="" alt="">
+            </div>
+            <div class="pt-3 d-flex justify-content-between">
+              <button class="btn btn-danger">Attack1</button>
+              <button class="btn btn-danger">Attack2</button>
             </div>
           </div>
           <div id="player2" class="border border-5 rounded-3 py-2 px-3">
             <h5 class="text-center" id="name2">Char Name</h5>
             <div class="row">
-              <div class="col-4 text-center"><i class="d-block fa fa-heart text-danger"></i> <span id="health2">10</span></div>
-              <div class="col-4 text-center"><i class="d-block fa fa-shield text-muted"></i> <span id="shield2">10</span></div>
-              <div class="col-4 text-center"><i class="fa d-block fa fa-tint text-primary"></i> <span id="mana2">10</span></div>
+              <div class="col-4 text-center"><i class="d-block fa fa-heart text-danger"></i> <span id="health2"></span></div>
+              <div class="col-4 text-center"><i class="d-block fa fa-shield text-muted"></i> <span id="shield2"></span></div>
+              <div class="col-4 text-center"><i class="fa d-block fa fa-tint text-primary"></i> <span id="mana2"></span></div>
             </div>
-            <div class="d-flex justify-content-center
-             align-center">
-              <img id="image2" class="image-player" src="" alt="">
+            <div class="box-image-character d-flex justify-content-center align-center">
+              <img id="image2" src="" alt="">
+            </div>
+            <div class="pt-3 d-flex justify-content-between">
+              <button class="btn btn-danger">Attack1</button>
+              <button class="btn btn-danger">Attack2</button>
             </div>
           </div>
         </div>
