@@ -33,7 +33,7 @@ function generateCharacter(){
   player.createCharacter(Object.keys(inputs).map(key => inputs[key].value));
   changePlayerState();
 }
-
+ 
 function changePlayerState(){
   if(inputs.player.value == 'player 1'){
     for(let item in Object.keys(player1)){

@@ -2,7 +2,7 @@ class Character{
 	constructor(character){
 		this.character = []
 	}
-
+ 
 	createCharacter(character){
 		this.character.push({
 			name: character.name,
