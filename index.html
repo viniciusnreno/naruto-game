@@ -11,7 +11,7 @@
     <div class="container">
       <h1 class="text-center mt-4">Naruto Game</h1>
       <form>
-        <div class="row pb-2 pt-3">
+        <div class="row pb-md-2 pt-3">
           <div class="col-md-4">
             <div class="form-group">
               <label for="charName">Character Name</label>
@@ -62,7 +62,7 @@
         <a class="btn btn-success" id="buttonCreateCharacter">Add</a>
       </form>
       <section>
-        <div class="d-flex flex-wrap justify-content-between mt-md-5 pt-4 ">
+        <div class="box-characters justify-content-between mt-md-5 pt-4 ">
           <div id="player1" class="border border-5 rounded-3 py-2 px-3">
             <h5 class="text-center" id="name1">Char Name</h5>
             <div class="row">
@@ -70,7 +70,10 @@
               <div class="col-4 text-center"><i class="d-block fa fa-shield text-muted"></i> <span id="shield1">10</span></div>
               <div class="col-4 text-center"><i class="fa d-block fa fa-tint text-primary"></i> <span id="mana1">10</span></div>
             </div>
-            <img id="image1" class="image-player" src="" alt="">
+            <div class="d-flex justify-content-center
+             align-center">
+              <img id="image1" class="image-player" src="" alt="">
+            </div>
           </div>
           <div id="player2" class="border border-5 rounded-3 py-2 px-3">
             <h5 class="text-center" id="name2">Char Name</h5>
@@ -79,7 +82,10 @@
               <div class="col-4 text-center"><i class="d-block fa fa-shield text-muted"></i> <span id="shield2">10</span></div>
               <div class="col-4 text-center"><i class="fa d-block fa fa-tint text-primary"></i> <span id="mana2">10</span></div>
             </div>
-            <img id="image2" class="image-player" src="" alt="">
+            <div class="d-flex justify-content-center
+             align-center">
+              <img id="image2" class="image-player" src="" alt="">
+            </div>
           </div>
         </div>
       </section>
