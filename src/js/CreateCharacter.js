@@ -23,7 +23,7 @@ function clearForm(){
 
 // create character object and add it to the game
 function generateCharacter(){
-  let player = new Character();
+  var player = new Character();
   player.createCharacter(Object.keys(inputs).map(key => inputs[key].value));
   changePlayerState();
 }
@@ -38,6 +38,7 @@ function changePlayerState(){
     }
     const image1 = document.getElementById('image1');
     image1.src = `./assets/images/${inputs.village.value}.gif`;
+    
   }else{
     // change player 2 state
     for(let item in Object.keys(player2)){
@@ -60,6 +61,8 @@ buttonCreateCharacter.addEventListener('click', () => {
   changePlayerState();
   clearForm();
 });
+
+export { player1, player2 }
 
   
 
